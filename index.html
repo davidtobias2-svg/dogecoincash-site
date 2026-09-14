@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An informational resource for holders of restricted Dogecoin Cash Units issued by Dogecoin Cash, Inc.">
+  <title>Dogecoin Cash | Information for Unit Holders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="status-bar"><span></span>Independent token information provided for DOGP Unit holders</div>
+  <header>
+    <a class="brand" href="#top" aria-label="Dogecoin Cash information home">
+      <span class="coin-mark">Ð</span><span>DOGECOIN<br><b>CASH</b></span>
+    </a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#market">Market</a><a href="#understand">Understand</a><a href="#faq">FAQ</a><a href="#sources">Sources</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">INFORMATION FOR UNIT HOLDERS</p>
+        <h1>See the token.<br><em>Understand the Units.</em></h1>
+        <p class="lead">A clear place for holders of restricted book-entry Units issued by Dogecoin Cash, Inc. to find public information about the underlying DogeCoin Cash (DOG) token.</p>
+        <div class="actions">
+          <a class="button primary" href="#market">View live market</a>
+          <a class="button secondary" href="#understand">How the pieces differ</a>
+        </div>
+      </div>
+      <aside class="identity-card">
+        <p class="label">VERIFIED TOKEN IDENTITY</p>
+        <div class="token-row"><span class="coin-mark large">Ð</span><div><h2>DogeCoin Cash</h2><p>DOG · BEP-20</p></div></div>
+        <dl><div><dt>Network</dt><dd>BNB Smart Chain</dd></div><div><dt>Contract</dt><dd><button id="copy-contract" title="Copy contract">0x9596…9dC78</button></dd></div></dl>
+        <p id="copy-status" class="copy-status" aria-live="polite"></p>
+        <a class="text-link" target="_blank" rel="noopener" href="https://bscscan.com/token/0x9596a56c73CA6f50CBd05cB8D85865F75659dC78">Verify on BscScan ↗</a>
+      </aside>
+    </section>
+
+    <section class="notice">
+      <strong>Important distinction</strong>
+      <p>This site is maintained as an informational resource for Dogecoin Cash, Inc. Unit holders. It is not represented as the official website of the token's developers. Dogecoin Cash, Inc. does not claim to have created, operate, or control the DOG token, its smart contract, PancakeSwap, or any secondary market.</p>
+    </section>
+
+    <section class="market-section" id="market">
+      <div class="section-heading"><p class="eyebrow">PUBLIC MARKET DATA</p><h2>DOG market snapshot</h2><p>Market data is retrieved from public decentralized-exchange sources and may be delayed or unavailable.</p></div>
+      <div class="market-grid">
+        <div class="quote-card">
+          <div class="quote-head"><div><span class="live-dot"></span>LIVE DATA</div><button id="refresh" class="refresh">Refresh</button></div>
+          <div id="loading" class="loading">Loading public market data…</div>
+          <div id="quote" hidden>
+            <p class="price" id="price">—</p>
+            <p class="pair" id="pair">DOG / WBNB</p>
+            <div class="metrics"><div><span>24h volume</span><b id="volume">—</b></div><div><span>Liquidity</span><b id="liquidity">—</b></div><div><span>24h change</span><b id="change">—</b></div><div><span>Last updated</span><b id="updated">—</b></div></div>
+          </div>
+          <p id="market-error" class="market-error" hidden>Live data is temporarily unavailable. Use the verified links below to check the market directly.</p>
+        </div>
+        <div class="trade-card">
+          <p class="eyebrow">EXTERNAL MARKET</p><h3>View DOG on PancakeSwap</h3>
+          <p>PancakeSwap is an independent decentralized exchange. Confirm the complete contract address in your wallet before any transaction.</p>
+          <a class="button primary full" target="_blank" rel="noopener" href="https://pancakeswap.finance/swap?outputCurrency=0x9596a56c73CA6f50CBd05cB8D85865F75659dC78">Open PancakeSwap ↗</a>
+          <a class="button secondary full" target="_blank" rel="noopener" href="https://www.geckoterminal.com/bsc/pools/0x9596a56c73ca6f50cbd05cb8d85865f75659dc78">View public chart ↗</a>
+          <small>Links open third-party websites. No endorsement or assurance of liquidity is made.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="understand" id="understand">
+      <div class="section-heading"><p class="eyebrow">PLAIN-LANGUAGE GUIDE</p><h2>Three related—but different—things</h2></div>
+      <div class="cards">
+        <article><span>01</span><h3>Dogecoin Cash, Inc.</h3><p>A publicly traded company quoted as DOGP. The company and its subsidiaries report holding approximately 8.02 billion DOG tokens.</p><a href="https://www.dogecoincashinc.com/" target="_blank" rel="noopener">Company website ↗</a></article>
+        <article><span>02</span><h3>Restricted Units</h3><p>Book-entry instruments issued to eligible DOGP shareholders. A Unit appearing in a brokerage account is not itself the freely traded DOG token.</p><a href="#faq">Read common questions ↓</a></article>
+        <article><span>03</span><h3>The DOG token</h3><p>A BEP-20 digital token on BNB Smart Chain that can have independent activity on decentralized exchanges such as PancakeSwap.</p><a href="https://bscscan.com/token/0x9596a56c73CA6f50CBd05cB8D85865F75659dC78" target="_blank" rel="noopener">Blockchain record ↗</a></article>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-heading"><p class="eyebrow">UNIT-HOLDER FAQ</p><h2>Common questions</h2></div>
+      <div class="faq">
+        <details><summary>Does a Unit in my brokerage account mean I hold a freely tradable DOG token?</summary><p>No. The Unit is a restricted book-entry instrument. The presence of a public market for DOG does not make the Unit freely transferable or tradable.</p></details>
+        <details><summary>Can I sell my Unit on PancakeSwap?</summary><p>No. PancakeSwap trades blockchain tokens held in compatible digital wallets; it does not trade the restricted book-entry Unit displayed by a broker or transfer agent.</p></details>
+        <details><summary>Does the market price shown here determine the value of my Unit?</summary><p>No. The displayed price reflects activity in a particular decentralized-exchange pool. It may involve very low liquidity and does not establish the value, transferability, or redeemability of a restricted Unit.</p></details>
+        <details><summary>Is DogecoinCash.com the developers' official token website?</summary><p>No. This website is an informational resource for Unit holders. It does not claim to be operated by the DOG token's developers or to replace any developer website.</p></details>
+        <details><summary>How can I avoid look-alike tokens?</summary><p>Always compare the entire contract address—not merely the name or symbol. The contract referenced here is 0x9596a56c73CA6f50CBd05cB8D85865F75659dC78 on BNB Smart Chain.</p></details>
+      </div>
+    </section>
+
+    <section class="sources" id="sources">
+      <div><p class="eyebrow">VERIFY, DON'T TRUST</p><h2>Primary and public sources</h2></div>
+      <div class="source-links">
+        <a href="https://bscscan.com/token/0x9596a56c73CA6f50CBd05cB8D85865F75659dC78" target="_blank" rel="noopener"><b>BscScan</b><span>Contract and transactions ↗</span></a>
+        <a href="https://pancakeswap.finance/info/tokens/0x9596a56c73ca6f50cbd05cb8d85865f75659dc78" target="_blank" rel="noopener"><b>PancakeSwap</b><span>DEX market information ↗</span></a>
+        <a href="https://www.otcmarkets.com/stock/DOGP/overview" target="_blank" rel="noopener"><b>OTC Markets</b><span>DOGP company information ↗</span></a>
+        <a href="https://www.sec.gov/edgar/browse/?CIK=1360442" target="_blank" rel="noopener"><b>SEC EDGAR</b><span>Company filings ↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="brand"><span class="coin-mark">Ð</span><span>DOGECOIN<br><b>CASH</b></span></div>
+    <p>Informational resource for Dogecoin Cash, Inc. Unit holders.</p>
+    <p class="fine">Digital assets are speculative and may lose substantial or all value. Market information is provided for reference only and is not investment, legal, or tax advice, an offer to sell, or a solicitation to buy any security or digital asset. Third-party data may be incomplete, delayed, or inaccurate.</p>
+    <p class="copyright">© <span id="year"></span> Dogecoin Cash, Inc. Information Portal</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
